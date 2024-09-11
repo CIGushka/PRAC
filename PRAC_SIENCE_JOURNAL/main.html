@@ -10,25 +10,15 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="contact-info">
-                <span>ISSN 0869-6632 (Print)</span>
-                <span>ISSN 2542-1905 (Online)</span>
-            </div>
-            <div class="headline">
-                <h1>Известия высших учебных заведений</h1>
-                <h2>Прикладная нелинейная динамика</h2>
-            </div>
-        <div class="buttons">
-            <button class="releases-btn">ВЫПУСКИ</button>
-            <button class="download-btn">ЗАГРУЗИТЬ СТАТЬЮ</button>
-        </div>
             <div class="sidebar">
-                <div class="trigger">
-                    <div class="Menubtn" onclick="toggleMenu('menu')"></div>
-                    <div class="Searchbtn" onclick="toggleMenu('searchMenu')"></div>
-                    <div class="linkbtn" onclick="toggleMenu('linksMenu')"></div>
-                    <div class="authbtn" onclick="toggleMenu('authMenu')"></div>
-                </div> 
+               <div class="trigger">                    
+                    <div class="linkbtn" onclick="toggleMenu('linksMenu')"><img src="Topbtn.png" alt=""></div>
+                    <div class="center"> 
+                        <div class="Searchbtn" onclick="toggleMenu('searchMenu')"><img src="Search.png" alt=""></div>
+                        <div class="Menubtn" onclick="toggleMenu('menu')"><img src="side3.png" alt=""></div>
+                    </div>
+                    <div class="authbtn" onclick="toggleMenu('authMenu')"><img src="auth.png" alt=""></div>
+                </div>  
                 <div class="menu" id="linksMenu">
                     <a href="#">WoS: 0.13</a>
                     <a href="#">SCOPUS: 1.2</a>
@@ -70,6 +60,21 @@
                     <button onclick="login()">Войти</button>
                 </div>
             </div>
+      
+            <div class="header-right-wrapper">
+                <div class="contact-info">
+                    <span>ISSN 0869-6632 (Print)</span>
+                   <span>ISSN 2542-1905 (Online)</span>
+               </div>
+               <div class="headline">
+                   <h1>Известия высших учебных заведений</h1>
+                   <h2>Прикладная нелинейная динамика</h2>
+                   <div class="buttons">
+                       <button class="releases-btn">ВЫПУСКИ</button>
+                       <button class="download-btn">ЗАГРУЗИТЬ СТАТЬЮ</button>
+                   </div>
+                </div>
+            </div>            
             <script src="func.js"></script>
         </div>
     </header>
@@ -113,7 +118,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; © 2013-2023 Дизайн и программное обеспечение сайта. ФГБОУ ВО «Саратовский национальный исследовательский государственный университет имени Н.Г. Чернышевского»</p>
+        <p>&copy; 2013-2023 Дизайн и программное обеспечение сайта. ФГБОУ ВО «Саратовский национальный исследовательский государственный университет имени Н.Г. Чернышевского»</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
