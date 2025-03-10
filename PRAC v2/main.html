@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прикладная нелинейная динамика</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./func.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="sidebar">
+               <div class="trigger">                    
+                    <div class="linkbtn" onclick="toggleMenu('linksMenu')"><img src="Topbtn.png" alt=""></div>
+                    <div class="center"> 
+                        <div class="Searchbtn" onclick="toggleMenu('searchMenu')"><img src="Search.png" alt=""></div>
+                        <div class="Menubtn" onclick="toggleMenu('menu')"><img src="side3.png" alt=""></div>
+                    </div>
+                    <div class="authbtn" onclick="toggleMenu('authMenu')"><img src="auth.png" alt=""></div>
+                </div>  
+                <div class="menu" id="linksMenu">
+                    <a href="#">WoS: 0.13</a>
+                    <a href="#">SCOPUS: 1.2</a>
+                    <a href="#">RSCI</a>
+                    <a href="#">РИНЦ: 0.626</a>
+                    <a href="#">Scimago: Q3</a>
+                    <a href="#">Список ВАК</a>
+                    <a href="#">Журналы СГУ</a>
+                </div>
+                <div class="menu" id="menu">
+                    <a href="#">Общая информация</a>
+                    <a href="#">Цели и тематика журнала</a>
+                    <a href="#">Индексирование</a>
+                    <a href="#">Редакционная коллегия</a>
+                    <a href="#">Правила представления рукописей</a>
+                    <a href="#">Порядок рецензирования рукописей</a>
+                    <a href="#">Авторы</a>
+                    <a href="#">Издательская этика</a>
+                    <a href="#">Рубрики</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Ранний доступ</a>
+                </div>
+                <div class="menu" id="searchMenu">
+                    <input type="text" id="searchInput" placeholder="Введите текст для поиска">
+                    <div class="dropdown">
+                        <input type="text" class="dropdown-btn" placeholder="Выберите ключевое слово" readonly onclick="toggleDropdown()">
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="#" onclick="selectKeyword('Ключевое слово 1')">Ключевое слово 1</a>
+                            <a href="#" onclick="selectKeyword('Ключевое слово 2')">Ключевое слово 2</a>
+                            <a href="#" onclick="selectKeyword('Ключевое слово 3')">Ключевое слово 3</a>
+                        </div>
+                    </div>
+                    <button onclick="search()">Искать</button>
+                </div>
+                <div class="menu" id="authMenu">
+                    <input type="text" id="login" placeholder="Логин">
+                    <input type="password" id="password" placeholder="Пароль">
+                    <button onclick="login()">Войти</button>
+                </div>
+            </div>
+      
+            <div class="header-right-wrapper">
+                <div class="contact-info">
+                    <span>ISSN 0869-6632 (Print)</span>
+                   <span>ISSN 2542-1905 (Online)</span>
+               </div>
+               <div class="headline">
+                   <h1>Известия высших учебных заведений</h1>
+                   <h2>Прикладная нелинейная динамика</h2>
+                   <div class="buttons">
+                       <button class="releases-btn"><a href="article.html">ВЫПУСКИ</a></button>
+                       <button class="download-btn">ЗАГРУЗИТЬ СТАТЬЮ</button>
+                   </div>
+                </div>
+            </div>            
+            <script src="func.js"></script>
+        </div>
+    </header>
+    <main>
+        <section class="info-section">
+            <button class="info-card">
+                <h3>Общая информация</h3>
+            </button>
+            <button class="info-card">
+                <h3>Цели и тематика журнала</h3>
+            </button>
+            <button class="info-card">
+                <h3>Индексирование</h3>
+            </button>
+            <button class="info-card">
+                <h3>Редакционная коллегия</h3>
+            </button>
+            <button class="info-card">
+                <h3>Правила представления рукописей</h3>
+            </button>
+            <button class="info-card">
+                <h3>Порядок рецензирования рукописей</h3>
+            </button>
+            <button class="info-card">
+                <h3>Авторы</h3>
+            </button>
+            <button class="info-card">
+                <h3>Издательская этика</h3>
+            <button class="info-card">
+                <h3>Рубрики</h3>
+            </button>
+            <button class="info-card">
+                <h3>Новости</h3>
+            </button>
+            <button class="info-card">
+                <h3>Контакты</h3>
+            </button>
+            <button class="info-card">
+                <h3>Ранний доступ</h3>
+            </button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2013-2023 Дизайн и программное обеспечение сайта. ФГБОУ ВО «Саратовский национальный исследовательский государственный университет имени Н.Г. Чернышевского»</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
