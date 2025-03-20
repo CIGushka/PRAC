@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background-image: url('./src/img/png/top.png');
+  background-image: url('/src/img/png/top.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@ header {
 }
 
 article-header {
-  background-image: url('./src/img/png/topArticle.png');
+  background-image: url('/src/img/png/topArticle.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -387,7 +387,7 @@ h4 {
   border: none;
   cursor: pointer;
   font-size: x-large;
-  background-image: url(./src/img/png/cardcolor.png);
+  background-image: url(/src/img/png/cardcolor.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
