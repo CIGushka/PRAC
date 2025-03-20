@@ -423,7 +423,7 @@ h4 {
   z-index: 5;
 }
 
-svg[alt="goal"] path, svg[alt="authors"] path{ 
+.goal path, .authors path{ 
   fill: none !important;
 }
 
