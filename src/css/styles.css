@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background-image: url('/src/img/png/top.png');
+  background-image: url('../img/png/top.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,8 +31,8 @@ header {
   color: #ffffff;
 }
 
-article-header {
-  background-image: url('/src/img/png/topArticle.png');
+.article-header {
+  background-image: url('../img/png/topArticle.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -198,8 +198,16 @@ article-header {
   width: 80%;
   margin-bottom: 10px;
   position: relative;
-  top: 40%;
+  top: 35%;
   left: 10%;
+  margin-bottom: 15px;
+}
+
+.dropdown h3 {
+  position: relative;
+  left: 20%;
+  width: 50%;
+  margin-bottom: 15px;
 }
 
 .dropdown-btn {
@@ -387,7 +395,7 @@ h4 {
   border: none;
   cursor: pointer;
   font-size: x-large;
-  background-image: url(/src/img/png/cardcolor.png);
+  background-image: url("../img/png/cardcolor.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
@@ -408,7 +416,7 @@ h4 {
   z-index: 5;
 }
 
-#icon{
+.icon{
   position: absolute;
   top: 26px;
   left: 25px;
@@ -425,7 +433,7 @@ svg {
   }
 }
 
-#icon path{
+.icon path{
   fill: #FF4646;
   stroke: #FF4646;
 }
@@ -435,7 +443,7 @@ svg {
   color: #fff;
 }
 
-.info-card:hover #icon path{
+.info-card:hover .icon path{
   fill: white;
   stroke: white;
 }
@@ -698,4 +706,8 @@ footer p {
   .buttons {
     margin-top: 10px;
   }
+}
+
+.hidden {
+  display: none;
 }

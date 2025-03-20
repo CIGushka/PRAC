@@ -75,9 +75,10 @@
                 </div>
                 <div class="menu" id="searchMenu">
                     <div class="dropdown">
-                        <input type="text" class="dropdown-btn" id="keywordInput" 
-                               placeholder="Выберите ключевое слово" readonly 
-                               onclick="toggleDropdown()">
+                        <h3>Заголовок:</h3>
+                        <input type="text" id="searchInput" placeholder="">
+                        <h3>Ключевое слово:</h3>
+                        <input type="text" class="dropdown-btn" id="keywordInput" readonly onclick="toggleDropdown()">
                         <div class="dropdown-content" id="dropdown-content"></div>
                     </div>
                     <button onclick="performSearch()">Искать</button>

@@ -181,3 +181,55 @@ function showStatus(message, color) {
   statusDiv.style.color = color;
   setTimeout(() => statusDiv.textContent = "", 2000);
 }
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function downloadFile(filePath) {
+  // Создаем ссылку на файл
+  const link = document.createElement('a');
+  link.href = filePath; // Путь к файлу
+  link.download = filePath.split('/').pop(); // Извлекаем имя файла из пути
+  document.body.appendChild(link); // Добавляем ссылку в DOM
+  link.click(); // Программно нажимаем на ссылку
+  document.body.removeChild(link); // Удаляем ссылку из DOM
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const listItems = document.querySelectorAll('.sixth ol li'); // Все элементы списка
+  const showMoreButton = document.querySelector('.show-more-button'); // Кнопка "Показать далее"
+  const visibleItems = 4; // Количество видимых элементов по умолчанию
+
+  // Скрываем все элементы, кроме первых `visibleItems`
+  listItems.forEach((item, index) => {
+    if (index >= visibleItems) {
+      item.classList.add('hidden');
+    }
+  });
+
+  // Обработчик клика на кнопку
+  showMoreButton.addEventListener('click', function (e) {
+    e.preventDefault(); // Предотвращаем переход по ссылке
+
+    // Переключаем видимость скрытых элементов
+    listItems.forEach((item, index) => {
+      if (index >= visibleItems) {
+        item.classList.toggle('hidden');
+      }
+    });
+
+    // Меняем текст кнопки
+    if (showMoreButton.textContent === 'Показать далее') {
+      showMoreButton.textContent = 'Скрыть';
+    } else {
+      showMoreButton.textContent = 'Показать далее';
+    }
+  });
+});

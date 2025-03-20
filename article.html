@@ -10,7 +10,7 @@
   <body>
     <script src="./src/js/func.js"></script>
     <script src="./src/js/articles-date.js"></script>
-    <article-header>
+    <header class="article-header">
       <div class="header-content">
         <div class="sidebar">
           <div class="trigger">
@@ -21,7 +21,7 @@
                         <path id="en" d="M31.668 7.44V9H25.164V0.599999H31.512V2.16H27.096V3.984H30.996V5.496H27.096V7.44H31.668ZM40.9188 0.599999V9H39.3228L35.1348 3.9V9H33.2148V0.599999H34.8228L38.9987 5.7V0.599999H40.9188Z" fill="#FF4646"/>
                     </svg>
                 </div>                    
-                <div class="linkbtn" onclick="toggleMenu('linksMenu')">
+                <div class="linkbtn iconbtn" onclick="toggleMenu('linksMenu')">
                     <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.47494 8.64321C4.62775 8.59881 3.96395 7.87049 4.15105 7.04303C4.43963 5.76671 5.00347 4.56207 5.81022 3.51637C6.93139 2.06312 8.46856 0.985781 10.2172 0.427736C11.9657 -0.130309 13.8428 -0.142593 15.5986 0.392518C17.3543 0.927628 18.9054 1.98476 20.0455 3.42321C21.1856 4.86166 21.8606 6.61321 21.9807 8.44476C22.1007 10.2763 21.6601 12.101 20.7175 13.6759C19.7749 15.2509 18.375 16.5014 16.7042 17.2611C15.5019 17.8078 14.2003 18.0816 12.8918 18.0711C12.0435 18.0643 11.486 17.2518 11.6362 16.4168C11.7864 15.5819 12.5926 15.0478 13.4382 14.9804C14.1241 14.9257 14.7992 14.7525 15.4326 14.4645C16.5354 13.9631 17.4593 13.1377 18.0814 12.0983C18.7035 11.0588 18.9943 9.85451 18.9151 8.64569C18.8359 7.43686 18.3904 6.28084 17.6379 5.33146C16.8855 4.38208 15.8617 3.68438 14.7029 3.3312C13.5441 2.97803 12.3053 2.98614 11.1512 3.35445C9.99711 3.72276 8.98258 4.4338 8.24261 5.39295C7.8176 5.94383 7.49474 6.56155 7.28488 7.21682C7.02613 8.02474 6.32212 8.68761 5.47494 8.64321Z" fill="#FF4646"/>
                         <path d="M16.1683 20.4554C16.9751 20.7175 17.4278 21.5928 17.0329 22.3437C16.4238 23.5018 15.5674 24.5195 14.5175 25.3208C13.0584 26.4343 11.2948 27.0771 9.46135 27.1635C7.62792 27.25 5.81162 26.7761 4.2542 25.8048C2.69678 24.8335 1.4721 23.4109 0.743147 21.7264C0.0141932 20.0419 -0.18446 18.1753 0.173626 16.3751C0.531712 14.5749 1.42955 12.9264 2.74766 11.6491C4.06577 10.3717 5.74162 9.52613 7.55219 9.22477C8.855 9.00792 10.1831 9.08028 11.4443 9.42907C12.2619 9.6552 12.5901 10.5844 12.2289 11.352C11.8677 12.1196 10.9508 12.4268 10.1165 12.2731C9.43989 12.1484 8.74292 12.141 8.05659 12.2552C6.86161 12.4541 5.75555 13.0122 4.8856 13.8553C4.01565 14.6983 3.42307 15.7863 3.18674 16.9744C2.9504 18.1626 3.08151 19.3945 3.56262 20.5063C4.04373 21.6181 4.85202 22.557 5.87992 23.198C6.90782 23.8391 8.10657 24.1519 9.31664 24.0948C10.5267 24.0377 11.6907 23.6135 12.6537 22.8786C13.2068 22.4565 13.6785 21.9433 14.0509 21.3647C14.5099 20.6513 15.3615 20.1932 16.1683 20.4554Z" fill="#FF4646"/>
@@ -29,12 +29,12 @@
                 </div>                             
             </div>
             <div class="center"> 
-                <div class="Searchbtn" onclick="toggleMenu('searchMenu')">
+                <div class="Searchbtn iconbtn" onclick="toggleMenu('searchMenu')">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <path d="M14.6263 0C11.611 0.00365486 8.72015 1.20312 6.58796 3.33531C4.45578 5.46749 3.25631 8.35831 3.25265 11.3737C3.26068 13.8231 4.06686 16.2032 5.54905 18.1534L0.479049 23.2234C0.327498 23.3741 0.207173 23.5532 0.12497 23.7505C0.042766 23.9478 0.000298935 24.1594 1.57253e-06 24.3731C-0.000295789 24.5868 0.0415824 24.7985 0.123237 24.996C0.204891 25.1936 0.324717 25.373 0.475848 25.5242C0.62698 25.6753 0.806447 25.7951 1.00397 25.8768C1.20149 25.9584 1.41318 26.0003 1.62691 26C1.84064 25.9997 2.05221 25.9572 2.2495 25.875C2.4468 25.7928 2.62593 25.6725 2.77664 25.521L7.84664 20.4509C9.79677 21.9331 12.1769 22.7393 14.6263 22.7473C17.6428 22.7473 20.5358 21.5491 22.6687 19.4161C24.8017 17.2831 26 14.3902 26 11.3737C26 8.35719 24.8017 5.46425 22.6687 3.33127C20.5358 1.19829 17.6428 0 14.6263 0ZM14.6263 19.4977C13.0195 19.4977 11.4488 19.0213 10.1128 18.1286C8.77685 17.2359 7.73557 15.9671 7.12068 14.4826C6.50579 12.9981 6.34491 11.3647 6.65838 9.78875C6.97184 8.21284 7.74559 6.76527 8.88175 5.6291C10.0179 4.49293 11.4655 3.71919 13.0414 3.40572C14.6173 3.09225 16.2508 3.25314 17.7353 3.86803C19.2197 4.48292 20.4885 5.5242 21.3812 6.86019C22.2739 8.19618 22.7504 9.76689 22.7504 11.3737C22.7479 13.5275 21.8911 15.5924 20.3681 17.1154C18.8451 18.6385 16.7802 19.4952 14.6263 19.4977Z" fill="#FF4646"/>
                     </svg>                               
                 </div>
-                <div class="Menubtn" onclick="toggleMenu('menu')">
+                <div class="Menubtn iconbtn" onclick="toggleMenu('menu')">
                     <svg width="44" height="32" viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="44" height="4" rx="2" fill="#FF4646"/>
                         <rect y="14" width="44" height="4" rx="2" fill="#FF4646"/>
@@ -42,7 +42,7 @@
                     </svg>                                
                 </div>
             </div>
-            <div class="authbtn" onclick="toggleMenu('authMenu')">
+            <div class="authbtn iconbtn" onclick="toggleMenu('authMenu')">
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.24674 12.6574L6.982 12.6574L5.36117 14.1058C4.86245 14.5515 4.86245 15.2201 5.36117 15.6657C5.85989 16.1114 6.60796 16.1114 7.10668 15.6657L10.8471 12.3231C10.9718 12.2117 11.0964 12.1003 11.0964 11.9889C11.2211 11.766 11.2211 11.4318 11.0964 11.0975C10.9718 10.9861 10.9718 10.8747 10.8471 10.7632L7.10668 7.42061C6.85732 7.19777 6.48328 7.08635 6.23393 7.08635C5.98457 7.08635 5.61053 7.19777 5.36117 7.42061C4.86245 7.8663 4.86245 8.53482 5.36117 8.9805L6.982 10.429L1.24674 10.429C0.498661 10.429 -5.76229e-05 10.8747 -5.76948e-05 11.5432C-5.77667e-05 12.2117 0.49866 12.6574 1.24674 12.6574Z" fill="#FF4646"/>
                     <path d="M9.75217 4.75067C8.98869 3.9872 8.98112 2.73302 9.86276 2.10973C11.1734 1.18317 12.6696 0.536917 14.258 0.220974C16.4887 -0.222756 18.801 0.00498277 20.9024 0.875391C23.0037 1.7458 24.7998 3.21978 26.0634 5.11095C27.327 7.00211 28.0015 9.22552 28.0015 11.5C28.0015 13.7745 27.327 15.9979 26.0634 17.8891C24.7998 19.7802 23.0037 21.2542 20.9024 22.1246C18.801 22.995 16.4887 23.2228 14.258 22.779C12.6696 22.4631 11.1734 21.8168 9.86276 20.8903C8.98112 20.267 8.98869 19.0128 9.75217 18.2493C10.5156 17.4859 11.746 17.5133 12.6788 18.0571C13.4011 18.4782 14.1919 18.7793 15.0208 18.9442C16.4931 19.237 18.0192 19.0867 19.4061 18.5123C20.793 17.9378 21.9784 16.965 22.8124 15.7168C23.6464 14.4686 24.0915 13.0012 24.0915 11.5C24.0915 9.99885 23.6464 8.5314 22.8124 7.28323C21.9784 6.03506 20.793 5.06223 19.4061 4.48776C18.0192 3.91329 16.4931 3.76298 15.0208 4.05585C14.1919 4.22071 13.4011 4.52184 12.6788 4.94295C11.746 5.48674 10.5156 5.51415 9.75217 4.75067Z" fill="#FF4646"/>
@@ -74,10 +74,11 @@
           </div>
           <div class="menu" id="searchMenu">
             <div class="dropdown">
-                <input type="text" class="dropdown-btn" id="keywordInput" 
-                       placeholder="Выберите ключевое слово" readonly 
-                       onclick="toggleDropdown()">
-                <div class="dropdown-content" id="dropdown-content"></div>
+              <h3>Заголовок:</h3>
+              <input type="text" id="searchInput" placeholder="">
+              <h3>Ключевое слово:</h3>
+              <input type="text" class="dropdown-btn" id="keywordInput" readonly onclick="toggleDropdown()">
+              <div class="dropdown-content" id="dropdown-content"></div>
             </div>
             <button onclick="performSearch()">Искать</button>
         </div>
@@ -115,14 +116,14 @@
               типа хищник–жертва
             </h1>
             <div class="buttons">
-              <button class="releases-btn">СКАЧАТЬ СТАТЬЮ</button>
-              <button class="download-btn">ПОДРОБНОСТИ</button>
+              <button class="releases-btn" onclick="downloadFile('./src/pdfs/and_2023_2_site.pdf')">СКАЧАТЬ СТАТЬЮ</button>
+              <button class="download-btn" onclick="scrollToSection('section-details')">ПОДРОБНОСТИ</button>
             </div>
           </div>
         </div>
         <script src="./src/js/func.js"></script>
       </div>
-    </article-header>
+    </header class="article-header">
     <main>
       <div class="article-content">
         <div class="block">
@@ -417,7 +418,7 @@
             </div>
           </div>
         </div>
-        <div class="block">
+        <div class="block" id="section-details">
           <h4 class="block_title">Аннотация:</h4>
           <div class="block_content">
             <div class="fourth">
@@ -580,8 +581,12 @@
                   // Theoretical Population Biology. 2001. Vol. 59, no. 2. P. 119–131. DOI:
                   10.1006/tpbi.2000.1506.
                 </li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias, ducimus asperiores nihil atque praesentium consectetur reiciendis ipsa a iure vero, animi iusto impedit odit sunt, beatae at quasi consequatur.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eius architecto, ipsa magni id nisi quasi enim ullam fugit quas neque aut impedit nulla delectus minima nesciunt incidunt. Quasi, ducimus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laudantium aliquam labore eos quibusdam? Iste eius tempora deleniti consequatur voluptas, doloribus voluptatibus quod debitis. Nobis ab molestiae ullam recusandae molestias!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores impedit quasi dolorum, velit labore quo quisquam eveniet, omnis ut illo tempore fuga? At pariatur laudantium sequi nam iusto vitae!</li>
               </ol>
-              <a href="">Показать далее</a>
+              <a href="" class="show-more-button">Показать далее</a>
             </div>
           </div>
         </div>
