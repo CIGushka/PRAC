@@ -41,18 +41,6 @@ function LengButton(button) {
   button.classList.toggle('active');
 }
 
-// var btnContainer = document.getElementsById("trigger");
-// var btns = btnContainer.getElementsByClassName("iconbtn");
-// console.log(Array.from(btns));
-
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//     var current = document.getElementsByClassName("activebtn");
-//     current[0].className = current[0].className.replace(" activebtn", "");
-//     this.className += " activebtn";
-//   });
-// }
-
 function selectKeyword(keyword) {
   document.querySelector('.dropdown-btn').value = keyword;
   document.getElementById('dropdown-content').style.display = 'none';
@@ -77,8 +65,14 @@ function login() {
 
   if (login && password) {
       alert('Вход выполнен с логином: ' + login);
-      alert('Введите логин и пароль.');
   }
+  else {
+    alert('Введите логин и пароль.');
+  }
+}
+
+function register() {
+  alert('переход на страницу регистрации')
 }
 
 
@@ -233,3 +227,40 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+function openFileDialog() {
+  document.getElementById('fileInput').click(); // Программно нажимаем на input
+}
+
+// Обработчик события выбора файла
+document.getElementById('fileInput').addEventListener('change', function (event) {
+  const file = event.target.files[0]; // Получаем выбранный файл
+  if (file) {
+    displayFile(file); // Отображаем выбранный файл
+  }
+});
+
+// Функция для отображения выбранного файла
+function displayFile(file) {
+  const fileDisplay = document.getElementById('fileDisplay');
+  fileDisplay.innerHTML = `Выбран файл: <strong>${file.name}</strong>`; // Показываем имя файла
+
+  // Опционально: добавить кнопку для удаления файла
+  const removeButton = document.createElement('button');
+  removeButton.textContent = '×';
+  removeButton.classList.add('remove-file-btn');
+  removeButton.onclick = () => {
+    fileDisplay.innerHTML = ''; // Очищаем отображение
+    document.getElementById('fileInput').value = ''; // Сбрасываем input
+  };
+  fileDisplay.appendChild(removeButton);
+}
+
+function resetSearch() {
+  // Очищаем поле с ключевым словом
+  document.getElementById('keywordInput').value = '';
+  // Скрываем выпадающий список (если он открыт)
+  document.getElementById('dropdown-content').style.display = 'none';
+  // Сбрасываем выбранное ключевое слово в глобальной переменной (если она есть)
+  selectedKeyword = null;
+}
